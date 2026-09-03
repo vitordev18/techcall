@@ -7,7 +7,7 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 import { ALUNO_ID, db } from '../firebase/config';
 
@@ -89,8 +89,7 @@ export default function CallListScreen({ navigation }: any) {
           return (
             <TouchableOpacity
               style={styles.card}
-              onPress={() => navigation.navigate('CallDetail', { chamadoId: item.id })}
-            >
+              onPress={() => navigation.navigate('CallDetail', { chamadoId: item.id })}>
               <Text style={styles.cardTitle}>{item.description}</Text>
               <View style={[styles.statusBadge, { backgroundColor: statusInfo.color }]}>
                 <Text style={styles.statusText}>{statusInfo.label}</Text>
