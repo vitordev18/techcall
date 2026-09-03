@@ -32,7 +32,8 @@
         {
           "locationAlwaysAndWhenInUsePermission": "Permita o acesso à localização para registrar o local do chamado."
         }
-      ]
+      ],
+      "expo-status-bar"
     ]
   }
 }
